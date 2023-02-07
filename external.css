@@ -1,0 +1,43 @@
+body {
+    background-color: linen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0000c0;
+}
+
+a:visited {color: #0000c0}
+
+header {
+    text-align: center;
+}
+
+#mainlogo {
+    text-decoration: none;
+    font-size: 45pt;
+    font-weight: bold; 
+}
+
+#catchphrase {
+    margin-top: 3pt;
+}
+
+.topnav {
+    list-style-type:none;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.topnav li{
+    display:inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.topnav a{
+    display:inline-block;
+    padding:5px;
+    color: #0000c0;
+    text-decoration: none;
+}
+
+@media (max-width: 600px)
