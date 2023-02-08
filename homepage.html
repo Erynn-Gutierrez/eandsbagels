@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E&S Bagels Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="external.css">
+        <style>
+            /*sets picture in background to allow text over it*/
+            .pic {
+                padding: 10px;
+                line-height: 25px;
+                background-image: url(bagelbasket.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            /*places text over background image*/
+            #text1, #text2 {
+                color: linen;
+                font-weight: bold;
+                text-align: center;
+            }
+            /*creates order button on top of image*/
+            #orderbutton {
+                background-color: #0000c0;
+                border: none;
+                color: linen;
+                padding: 13px 25px;
+                margin-top: 10px;
+                margin-bottom: 1px;
+                text-align: center;
+            }
+            /*specifies style of text on order button*/
+            #orderbutton a {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: 100;
+                display:inline-block;
+                color: linen;
+                text-decoration: none;
+            }
+            /*sets background for our story and contact sections*/
+            .about, .location {
+                padding-bottom: 20px;
+                padding-top: 10px;
+                width: 725px;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: rgb(248, 217, 188);
+                border-radius: 40px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+
+            /*centers "Our Story" header*/
+            .about h2 {text-align: center;}
+
+            /*sets up paragraph for "Our Story" section*/
+            .about p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
+                color: #0000c0;
+                margin-right: 50px;
+                margin-left: 50px;
+                text-align:justify;
+            }
+            /*sets up bagel picture*/
+            .pic2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom:40px;
+            }
+            
+            /*sets up "contact us" section*/
+            .location {
+                text-align: center;
+                margin-bottom: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="homepage.html" 
+            id="mainlogo">E&S BAGELS
+            </a>
+            <h3 id="catchphrase">A fresh bagel for me, a fresh bagel for you!</h3>
+            <nav>
+                <ul class="topnav">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br/>
+        <div class="pic">
+                <h1 id="text1">Voted Best Bagels in Medford!</h1>
+                <h3 id="text2">All bagels made on premises daily</h>
+                <br>
+                <button id="orderbutton">
+                    <a href="menu.html">Our Menu</a>
+                </button>
+            </div>
+        <br>
+        <div class="about">
+            <h2>Our Story</h2>
+            <p>
+            Ernie and Sylvester met in high school and became fast friends, 
+            bonded by their love of food and their entrepreneurial spirit. 
+            As they grew older, they both pursued careers in the food industry, 
+            but they never forgot their dream of starting their own business.
+            </p><p>
+            Years later, when they were both retired, they decided to turn their
+            passion for food into a reality. They decided to open a bagel shop 
+            in their hometown of Medford, Massachusetts.
+            They wanted to create a warm and welcoming space where people could 
+            gather, chat, and enjoy a delicious bagel. They spent months 
+            perfecting their recipes, sourcing the best ingredients, and 
+            creating a menu that was both classic and innovative.
+            </p><p>
+            On opening day, the line of customers extended out the door, and the
+            shop quickly became a staple in the community. Ernie and Sylvester 
+            were thrilled to see how much their customers enjoyed their bagels, 
+            and they worked tirelessly to ensure that every bagel was made with 
+            care and precision. As the years went by, Ernie and Sylvester's 
+            Bagel Haven became a beloved institution in Medford, known for its 
+            friendly service, fresh ingredients, and delicious bagels. 
+            </p><p>
+            The two best friends continued to work together every day, making 
+            sure that every customer who walked through the door felt like 
+            family. It is why they get to the store at 2am every day and back 
+            fresh bagels every two hours, so that their bagels are fresh and 
+            delicious for their customers to enjoy by morning rush hour.
+            </p><p>
+            Ernie and Sylvester's Bagel Haven is more than just a business; 
+            it's a testament to the friendship and passion that started it all. 
+            They are proud to have created a place where people can come 
+            together to enjoy good food and good company, and they look forward
+            to serving their community for many years to come. There is no 
+            better way than with a bagel from E&S Bagels.
+            </p>
+        </div>
+        <img src="bagelsheet.jpg" class="pic2">
+
+        <div class="location">
+            <h2>Connect With Us</h2>
+            <h3>Address</h3>
+            96 Lower Campus Road, Medford, MA, 02145
+            <h3>Hours</h3>
+            Monday - Sunday: 6 AM - 10 PM 
+            <h3>Phone</h3>
+            +1(203)475-2088
+            <h3>Email</h3>
+            info@eandsbagels.com
+        </div>
+    </body>
+</html>
