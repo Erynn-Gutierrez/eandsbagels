@@ -1,287 +1,48 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>E&S Bagels Menu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="external.css">
-        <style>
-            /*sets background for bagels, spreads, and sandwiches sections*/
-            .bagels, .spreads, .sandwiches {
-                margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 30px;
-                padding-top: 5px; 
-                padding-bottom: 20px;
-                background-color: rgb(248, 217, 188);
-                width: 550px;
-                border-radius: 40px;
-            }
-            
-            /*centers price/item tables for bagels, spreads, and sandwiches sections*/
-            .bagelprices, .spreadsprices, .sandwichesprices {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            /*centers headers for bagels, spreads, and sandwiches sections*/
-            #bagelhead, #spreadhead, #sandhead {
-                text-align: center;
-                margin-bottom: 2px;
-            }
-            
-            /*centers options  bagels, and sandwiches sections*/
-            .bagelopts, .cheeses {
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            /*sets bottom margin of bagel options*/
-            #a {margin-bottom: -10px;}
-            
-            /*sets width for bagel prices table*/
-            .bagelprices {width: 250px;}
-            
-            /*sets font size for spreads header*/
-            #spreadheaders {font-size: 8pt;}
-            
-            /*sets width for spreads prices table*/
-            .spreadsprices {width: 400px;}
-            
-            /*sets font size for sandwich second header*/
-            #sandb {
-                font-weight: normal;
-                font-style: italic;
-                font-size: 10pt;
-                text-align: center;
-                margin-top: 5px;
-            }
-            
-            /*set up width between the cheese option header and the first cheese line*/
-            #cheesehead, #cheese1 {margin-bottom: -10px;}
+body {
+    background-color: linen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0000c0;
+}
 
-            /*sets up width and bottom margin for sandwich price table*/
-            .sandwichesprices {
-                margin-bottom: 15px;
-                width: 400px;
-            }
-            
-            /*set up the first background image*/
-            .pic1 {
-                padding: 10px;
-                line-height: 25px;
-                background-image: url(menu.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-               
-            /*set up the second background image*/
-            .pic2 {
-                padding: 10px;
-                line-height: 25px;
-                background-image: url(bagelz.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            
-            /*places text over background image*/
-            #text1, #text3, #text4 {
-                color: linen;
-                font-weight: bold;
-                text-align: center;
-            }
+body, header {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-            
-            #text1 {font-size: 30pt;}
-            
-            /*creates call button on top of image*/
-            #callbutton {
-                background-color: #0000c0;
-                border: none;
-                color: linen;
-                padding: 13px 25px;
-                margin-top: 10px;
-                margin-bottom: 1px;
-                text-align: center;
-            }
-            /*specifies style of text on order button*/
-            #callbutton a {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 13px;
-                font-weight: 100;
-                display:inline-block;
-                color: linen;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <a href="homepage.html" id="mainlogo">E&S BAGELS</a>
-            <h3 id="catchphrase">A fresh bagel for me, a fresh bagel for you!</h3>
-            <nav>
-                <ul class="topnav">
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <br>
-        <div class="pic1">
-                <h1 id="text1">Menu</h1>
-        </div> 
-        <div class="menu">
-            <div class="bagels">
-                <h3 id="bagelhead">Bagels</h3>
-                <div class="bagelopts">
-                    <p id="a">
-                        Plain - Sesame - Everything - Wheat 
-                    </p><p id="a">
-                        Multigrain - Cinnamon Raisin - Garlic
-                    </p><p id="a">
-                        Poppy Seed - Onion - Ghost Pepper Cheddar
-                    </p><p>
-                        Asiago - Blueberry - Egg - Salt
-                    </p>
-                </div>
-                <table class="bagelprices">
-                    <tr>
-                        <th><!--Item--></th>
-                        <th<><!--Price--></th>
-                    </tr>
-                    <tr>
-                        <td>Single Bagel</td>
-                        <td>$2.25</td>
-                    </tr>
-                    <tr>
-                        <td>1/2 Dozen Bagels</td>
-                        <td>$10.50</td>
-                    </tr>
-                    <tr>
-                        <td>Dozen Bagels</td>
-                        <td>$21.00</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="spreads">
-                <h3 id="spreadhead">Spreads</h3>
-                <table class="spreadsprices">
-                    <tr id="spreadheaders">
-                        <th><!--Item--></th>
-                        <th>on a <br>bagel</th>
-                        <th>8oz <br>serving</th>
-                    </tr>
-                    <tr>
-                        <td>Plain Cream Cheese</td>
-                        <td>$3.00</td>
-                        <td>$4.00</td>
-                    </tr>
-                    <tr>
-                        <td>Veggie Cream Cheese</td>
-                        <td>$3.25</td>
-                        <td>$4.25</td>
-                    </tr>
-                    <tr>
-                        <td>Scallion Cream Cheese</td>
-                        <td>$3.25</td>
-                        <td>$4.25</td>
-                    </tr>
-                    <tr>
-                        <td>Honey Bacon Cheese</td>
-                        <td>$4.25</td>
-                        <td>$5.25</td>
-                    </tr>
-                    <tr>
-                        <td>Walnut Raisin Cream Cheese</td>
-                        <td>$4.25</td>
-                        <td>$5.25</td>
-                    </tr>
-                    <tr>
-                        <td>Jalapeño Cream Cheese</td>
-                        <td>$4.50</td>
-                        <td>$5.50</td>
-                    </tr>
-                    <tr>
-                        <td>Butter</td>
-                        <td>$3.00</td>
-                        <td>------</td>
-                    </tr>
-                    <tr>
-                        <td>Raspberry Jelly</td>
-                        <td>$3.25</td>
-                        <td>------</td>
-                    </tr>
-                    <tr>
-                        <td>Peanut Butter</td>
-                        <td>$4.25</td>
-                        <td>------</td>
-                    </tr>
-                    <tr>
-                        <td>Nutella</td>
-                        <td>$4.25</td>
-                        <td>------</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sandwiches">
-                <h3 id="sandhead">Sandwiches</h3>
-                <h4 id="sandb">Served with your choice of cheese and bagel</h4>
-                <div class="cheeses">
-                    <p id="cheesehead">Cheese Choices:</p>
-                    <p id="cheese1">American - Cheddar - Provolone </p>
-                    <p if="cheese2">Swiss - Feta - Pepper Jack</p>
-                </div>
-                <table class="sandwichesprices">
-                    <tr>
-                        <th><!--Item--></th>
-                        <th<><!--Price--></th>
-                    </tr>
-                    <tr>
-                        <td>Honey Ham & Cheese</td>
-                        <td>$7.25</td>
-                    </tr>
-                    <tr>
-                        <td>Turkey & Cheese</td>
-                        <td>$7.75</td>
-                    </tr>
-                    <tr>
-                        <td>Bacon & Cheese</td>
-                        <td>$7.75</td>
-                    </tr>
-                    <tr>
-                        <td>BLT</td>
-                        <td>$7.75</td>
-                    </tr>
-                    <tr>
-                        <td>Sweet Sausage & Cheese</td>
-                        <td>$8.25</td>
-                    </tr>
-                    <tr>
-                        <td>Spicy Sausage & Cheese</td>
-                        <td>$8.25</td>
-                    </tr>
-                        <td>BLT</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Bacon & Turkey</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Steak & Cheese</td>
-                        <td>$9.00</td>
-                </table>
-            </div>
-            <div class="pic2">
-                    <h1 id="text3">Hungry for more?</h1>
-                    <h3 id="text4">Call us to order!</h>
-                    <br>
-                    <button id="callbutton">
-                        <a href="contact.html">Contact Us</a>
-                    </button>
-            </div>
-            <br>
-        </div>
-    </body>
-</html>
+a:visited {color: #0000c0}
+
+header {
+    text-align: center;
+    justify-content: center;
+    width:725px;
+}
+
+#mainlogo {
+    text-decoration: none;
+    font-size: 45pt;
+    font-weight: bold; 
+}
+
+#catchphrase {
+    margin-top: 3pt;
+}
+
+.topnav {
+    list-style-type:none;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.topnav li{
+    display:inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 25px;
+}
+
+.topnav a{
+    color: #0000c0;
+    text-decoration: none;
+}
+
+@media (max-width: 600px)
